@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header & Navigation */
+  header.hero {
+    background-image: url("../img2.png");
+    background-size: contain;
+    background-size: cover;
+    background-position: center center;
+    height: 813px;
+   
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .logo {
+    height: 99px;
+    width: 100px;
+    margin-left: 60px;
+  }
+  
+  nav ul {
+    display: flex;
+  
+    width: 70%; /* Taille du menu */
+  }
+  
+  nav ul li {
+    margin: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
+  
+  header .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px; /* Espace entre le nav et le contenu */
+    color: white;
+  }
+  
+ 
+  
+  .hero-content h1 {
+    font-family: "Sansita Swashed", system-ui;
+    font-weight: 400;
+    font-size: 74px;
+    margin-bottom: 25px;
+    color: #f5f5f5;
+    
+  }
+ 
+  /* Style des boutons */
+  .hero-content .hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .hero-content .btn {
+    padding: 20px 50px;
+    background-color: #933c24;
+    color: rgb(245, 239, 239);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+ 
+  
+  .btn:hover {
+    background-color: #7a3725;
+  }
+.nav-menu li a.active,
+.nav-menu li a:hover {
+    color: #e9bd8c;
+}
+  
+  
+  .product-container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 80px 120px;
+}
+
+.product-card {
+  background-image:url(../img/back.png) ;
+  background-size: cover;
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  border-radius: 8px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(16, 16, 16, 0.1);
+  display: flex;
+  flex-direction: column; /* Aligne les éléments verticalement */
+  justify-content: space-between; /* Espacement entre les éléments */
+  text-align: start;
+  height: 100%;
+  
+}
+
+.product-card img {
+  align-self: center; /* Centre l'image horizontalement */
+  max-width: 100%; /* S'assure que l'image ne dépasse pas les limites */
+  height: auto;
+  margin-bottom: 15px; /* Ajoute un espace sous l'image */
+}
+
+.product-card h3 {
+  font-size: 24px;
+  color: #ffff;
+  margin-bottom: 15px;
+  align-self: flex-start; /* Aligne les éléments h3 au début */
+}
+
+.product-card p {
+  padding-right: 10px; /* Un petit espace entre le texte et le bouton */
+  font-size: 16px;
+  color: #f0ecec;
+  flex-grow: 1; /* Le texte occupe tout l'espace disponible */
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.product-card button {
+  background-color: #933C24;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  align-self: flex-end; /* Aligne le bouton à la fin */
+}
+
+.product-card button:hover {
+  background-color: #c0392b;
+}
+.h2proc{
+  text-align: center;
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 40px;
+
+}
+.ourproduct{
+  margin-top: 100px;
+}
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.special-offer{
+  background-image: url("../img/more.png");
+  background-size: cover; /* L'image couvre toute la section */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  text-align: center;
+  height: 442px; /* Hauteur fixe */
+  display: flex; /* Utilisation de flexbox pour centrer les éléments */
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(11, 11, 11); /* Couleur du texte pour plus de lisibilité */
+
+}
+.special-offer h2{
+  color:#933C24;
+  margin-bottom: 20px;
+  
+}
+.special-offer p{
+  color: #5D5D5D;
+  margin-bottom: 37px;
+}
+.special-offer .btn {
+  background-color: #933C24; 
+  color: white; 
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; 
+}
+
+.special-offer .btn:hover {
+  background-color: #A0522D; 
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  margin: 80px 120px;
+}
+
+.explore-card {
+  padding: 0; /* Supprime tout padding pour les cartes */
+  margin: 0 -10px; /* Réduit l'espace entre les cartes horizontalement */
+}
+
+.explore-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0px 5px;
+  padding: 0 8px;
+}
+
+.explore h2 {
+  text-align: center;
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 40px;
+  margin-top: 80px;
+}
+
+
+.treats {
+  text-align: center;
+  margin: 50px 0;
+}
+.treats h2{
+  text-align: center;
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 40px;
+  margin-top: 80px;
+}
+.treats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  gap: 20px; /* Espacement entre les cartes */
+  justify-items: center; /* Centrer les cartes horizontalement */
+  padding: 50px 180px;
+}
+
+.treats-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.treats-card img {
+  width: 100%; /* S'adapte à la largeur de la carte */
+  height: auto;
+}
+
+.treats-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.treats-info h3:first-child {
+  justify-self: start; /* Le titre est à gauche */
+  margin-left: 40px;
+  font-size: 25px;
+}
+
+.treats-info h3:last-child {
+  justify-self: end; /* Le prix est à droite */
+  margin-right: 60px;
+  font-size: 25px;
+}
+
+
+
+footer {
+  background-image: url(../img/back.png);
+  background-size: cover; /* L'image couvre toute la section */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  color: #d2a679; /* Light brown text */
+  padding: 20px 0;
+  margin-top: 140px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 80px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.follow-text {
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #d2a679;
+  margin: 0 10px;
+  
+}
+
+.social-icons a:hover {
+  color: #fff; /* On hover */
+}
+
+.social-icons i {
+  font-size: 40px;
+}
+.footer-container-bas {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  border-top: 1px solid #d2a679;
+  padding-top: 40px;
+}
+
+.footer-column {
+  width: 30%;
+}
+
+.footer-column h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.footer-column p, 
+.footer-column a {
+  font-size: 20px;
+  color: #f6f5f4;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.news-item img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.news-text p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.footer-bottom {
+  text-align: center;
+   
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 20px;
+  color: #737373;
+}
