@@ -203,6 +203,8 @@
 
 }
 .special-offer h2{
+  font-family:"Sansita Swashed", system-ui ;
+  font-size: 25px;
   color:#933C24;
   margin-bottom: 20px;
   
@@ -224,7 +226,35 @@
 .special-offer .btn:hover {
   background-color: #A0522D; 
 }
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 450px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 20px;
+  margin-left :105px;
+  margin-right: 105px;
+ 
+}
 
+.tab {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #444;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.tab:hover {
+  color: #000;
+}
+
+.tab.active {
+  font-weight: bold;
+  color: #000;
+  border-bottom: 3px solid #a55224; /* Underline for active tab */
+}
 .explore-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
