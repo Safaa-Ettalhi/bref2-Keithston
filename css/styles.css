@@ -498,7 +498,7 @@ footer {
 .navbar-mobil{
   display: none;
 }
-@media (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .nav-menu{
     display: none;
   }
@@ -601,6 +601,7 @@ font-size: 30px;
 
 .tabs {
   padding: 10px; /* Ajuste le padding pour les petits écrans */
+  margin-left: 30px;
 }
 
 .explore h2 {
@@ -623,6 +624,7 @@ font-size: 30px;
 /*treats*/
 .treats-grid {
   grid-template-columns: 1fr; /* Une colonne pour les très petits écrans */
+  margin-left: -60px;
 }
 
 .treats h2 {
