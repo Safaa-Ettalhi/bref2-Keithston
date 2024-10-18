@@ -1,0 +1,256 @@
+
+@media only screen and (max-width: 700px) {
+    .nav-menu{
+      display: none;
+    }
+    .navbar-mobil a img {
+      width: 40px;
+      margin-left: 10px;
+      margin-top: 10px;
+  
+  }
+  .navbar-mobil{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+  .navbar-mobil .dropdown{
+      margin-top: 15px;
+      margin-right: 10px;
+  }
+  .navbar-mobil .dropdown .dropbtn .dropdown-content{
+      margin-right: 10px;
+  }
+  .dropbtn {
+  background-color: #ecac7f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  z-index: 1;
+  }
+  
+  .dropbtn:hover {
+  background-color: #e55d00;
+  }
+  
+  .dropdown {
+  position: relative;
+  }
+  
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  right: 0;
+  z-index: 99999;
+  }
+  
+  
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: color .3s ease;
+  }
+  .dropdown-content a:hover{
+  color:  #b37248 !important;
+  background-color: white;
+  }
+  
+  .dropdown:focus-within .dropdown-content {
+  display: block;
+  }
+  .navbar-mobil .dropdown .dropdown-content .panier i{
+  font-size: 30px;
+  }
+  /*hero +content*/
+  header.hero{
+    height: 600px;
+  }
+  header .hero-content{
+    margin-top: 50px;
+    
+  }
+  .hero-content p{
+      font-size: 22px;
+  }
+  .hero-content h1{
+    font-weight: 445;
+    font-size: 54px;
+  }
+  .hero-content .hero-button {
+    margin-top: 40px;}
+  /* product grid */
+  .product-grid {
+    grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .product-card p h3{
+    font-size: 20px;
+    /* padding: 0 1%; */
+    
+  }
+  
+  
+  
+  /*section flex*/
+  .special-offer {
+    padding: 30px 10px; /* Réduire l'espacement autour du contenu */
+  }
+  
+  .special-offer h2 {
+    font-size: 2em; /* Réduire la taille de la police pour le titre */
+  }
+  
+  .special-offer p {
+    font-size: 1em; /* Réduire la taille de la police pour le paragraphe */
+  }
+  
+  .hero-button .btn {
+    padding: 8px 15px; /* Réduire l'espacement intérieur du bouton */
+  }
+  .hero-button .btn {
+    padding: 8px 15px; /* Réduire le padding du bouton */
+  }
+  /* gride section 2*/
+  .explore-grid {
+    grid-template-columns: 1fr; /* Une colonne pour les très petits écrans */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /* Ajuste la taille min/max des colonnes */
+    padding: 10px 0; /* Supprimer le padding horizontal */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  /*about*/
+  .about h2 {
+    font-size: 38px; /* Réduire la taille de la police pour le titre */
+    color: #ad754f;
+  }
+  
+  .about p {
+    font-size: 20px; /* Réduire la taille de la police pour le paragraphe */
+    color: rgb(255, 250, 250);
+  }
+  
+  /*treats*/
+  .treats-grid {
+    grid-template-columns: 1fr; /* Une colonne pour les très petits écrans */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .treats-info h3:first-child {
+    font-size: 20px;
+    color: #000;
+  
+   
+  }
+  
+  .treats-info h3:last-child {
+    font-size: 20px;
+    color: #000;
+   
+  }
+  
+  /*footer*/
+  .footer-column {
+    width: 100%; /* Chaque colonne prend toute la largeur */
+    margin-bottom: 20px; /* Ajoute plus d'espace entre les colonnes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container-bas{
+    margin-left: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    font-size: 16px; /* Réduit la taille du texte dans le footer bas */
+  }
+  
+  .news-item img {
+    width: 50px; /* Réduit la taille des images dans les news */
+    height: 50px;
+  }
+  
+  .news-text p {
+    font-size: 15px; /* Réduit la taille du texte dans les news */
+  }
+  .follow-text{
+    margin: 0;
+    margin-right: 3px;
+    font-size: 18px;
+  }
+  .social-icons i {
+    font-size: 25px; /* Réduit la taille des icônes de réseaux sociaux */
+  }
+  
+  .logo {
+    height: 60px; /* Réduit la taille du logo */
+    width: 60px;
+  }
+  
+  }
+  
+  @media (min-width: 701px) and (max-width: 1100px) {
+    .tabs {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      
+      border-bottom: 1px solid #ddd;
+      padding: 0;
+      margin: 0;
+      margin-top: 3%;
+     
+  }
+  
+  
+  .product-grid {
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+      /* margin: 80px 120px; */
+  }
+  
+  
+  .treats-grid {
+    grid-template-columns: 1fr;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50%;
+  }
+  .footer-container-bas{
+    padding-left: 5%;
+  }
+  .footer-container{
+    padding: 0 5%;
+  }
+   }
+   @media (max-width: 529px) {
+    .reviews-grid {
+      
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+   }
