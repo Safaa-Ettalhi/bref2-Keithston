@@ -94,7 +94,9 @@
 .nav-menu li a:hover {
     color: #e9bd8c;
 }
-
+.navbar-mobil{
+  display: none;
+}
 .contact-form-section {
     background-image: url('img/background.jpg'); /* Image de fond */
     background-size: cover;

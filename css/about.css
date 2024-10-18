@@ -95,7 +95,9 @@
     color: #e9bd8c;
 }
   
-
+.navbar-mobil{
+  display: none;
+}
 
 .about{
   background-image: url("../img/about.png");

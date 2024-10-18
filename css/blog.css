@@ -94,6 +94,9 @@
 .nav-menu li a:hover {
     color: #e9bd8c;
 }
+.navbar-mobil{
+  display: none;
+}
 .top-products{
   text-align: center;
 
